@@ -10,4 +10,4 @@ class HomeViewTest(TestCase):
         requst = http.HttpRequest()
         response = views.home(request)
         self.assertEqual(200, response.status_code)
-        self.assertIn('Hello World!', response.content)
+        self.assertIn('Hello World?', response.content)
